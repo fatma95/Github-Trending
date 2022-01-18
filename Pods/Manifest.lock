@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (5.5.0)
+  - DropDown (2.3.13)
+  - Kingfisher (7.1.2)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SkeletonView (1.29.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.5)
+  - DropDown
+  - Kingfisher (~> 7.0)
+  - RxCocoa (= 6.5.0)
+  - RxSwift (= 6.5.0)
+  - SkeletonView
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DropDown
+    - Kingfisher
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SkeletonView
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SkeletonView: e2667ec83098a438eff6279fbaa49d2865b7af23
+
+PODFILE CHECKSUM: 38b7eef2fc6edca850e5cc633bf3a794a7b8f019
+
+COCOAPODS: 1.11.2
