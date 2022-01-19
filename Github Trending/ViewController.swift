@@ -31,23 +31,30 @@ class ViewController: UIViewController {
     var indexPaths: [IndexPath] = []
     var repositories: [Repository]?
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         refreshControl.addTarget(self, action: #selector(refreshTrendings), for: .valueChanged)
         self.title = "Trending"
-        let button1 = UIBarButtonItem(image: UIImage(named: "more-black-24"), style: .plain, target: self, action: #selector(moreSettings))
-        self.navigationItem.rightBarButtonItem = button1
         setupTableView()
         subcribeToResponse()
         self.getTrendings()
         subscribeOnTableState()
-                
+        setNavBar()
+    }
+    
+    
+    
+    fileprivate func setNavBar() {
+        let button1 = UIBarButtonItem(image: UIImage(named: "more-black-24"), style: .plain, target: self, action: #selector(moreSettings))
+        self.navigationItem.rightBarButtonItem = button1
         rightBarDropDown.anchorView = button1
         rightBarDropDown.dataSource = ["Sort by stars", "Sort by name"]
         rightBarDropDown.cellConfiguration = { (index, item) in return "\(item)" }
     }
     
-    func setupTableView() {
+    
+    fileprivate func setupTableView() {
         if #available(iOS 10.0, *) {
         trendingsTableView.refreshControl = refreshControl
     } else {
